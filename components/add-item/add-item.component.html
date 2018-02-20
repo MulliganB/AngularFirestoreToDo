@@ -1,0 +1,24 @@
+<div class="card">
+  <div class="card-content blue lighten-5">
+    <span class="card-title">What is your next task?</span>
+    <form (ngSubmit)="onSubmit()" class="col s6">
+      <div class="row">
+        <div class="input-field col s6">
+          <input type="text" placeholder="Add Task Name" [(ngModel)]="item.title" name="title">
+          <label>Task Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input type="text" placeholder="Add a Location" [(ngModel)]="item.subtitle" name="subtitle">
+          <label>Location</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input type="text" placeholder="Add Description" [(ngModel)]="item.description" name="description">
+          <label>Description</label>
+        </div>
+        <input type="submit" class="btn blue accent-1" value="submit">
+      </div>
+    </form>
+  </div>
+</div>
